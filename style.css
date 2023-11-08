@@ -51,14 +51,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  gap: 2rem;
+  gap: 4rem;
   background-color: var(--white);
   padding: 2rem;
   border-radius: 2.5rem;
 }
 
 .form-text {
-  padding: 2rem 3rem;
+  padding: 0 0 0 2rem;
 }
 
 .features-text {
@@ -74,6 +74,16 @@ body {
 .form-input {
   display: flex;
   flex-direction: column;
+}
+
+.form-input div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input div label:nth-child(2) {
+  color: var(--tomato);
+  display: none;
 }
 
 .form-input label {

@@ -37,9 +37,12 @@
             </div>
           </div>
           <div class="form-input">
-            <label for="email">Email address</label>
+            <div>
+              <label for="email">Email address</label>
+              <label id="error-msg" for="email">Valid email required</label>
+            </div>
             <input id="email" type="email" placeholder="email@company.com" />
-            <button>Subscribe to monthly newsletter</button>
+            <button id="btn-submit">Subscribe to monthly newsletter</button>
           </div>
         </div>
         <div class="form-image">
@@ -50,5 +53,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
