@@ -106,7 +106,7 @@ body {
   outline: none;
 }
 
-.form-input button {
+button {
   padding: 1rem;
   border-radius: 0.4rem;
   font-weight: 400;
@@ -118,7 +118,11 @@ body {
 }
 
 .form-input button:hover {
-  background: linear-gradient(45deg, var(--light-pink), var(--tomato));
+  background: linear-gradient(
+    45deg,
+    var(--light-pink),
+    var(--tomato)
+  );
   box-shadow: 0px 5px 15px -3px var(--light-pink);
 }
 
@@ -128,12 +132,26 @@ body {
 }
 
 .modal {
-  display: flex;
-  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--tomato);
-  padding: 1rem;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 2rem;
+  width: 400px;
+  height: 480px;
+}
+
+.modal img {
+  width: 60px;
+  height: auto;
+}
+
+.modal button {
+  margin-top: 1rem;
 }
