@@ -30,7 +30,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   color: var(--charcoal-Grey);
-  line-height: 1.5Frem;
+  line-height: 1.5rem;
 }
 
 * {
@@ -42,6 +42,7 @@ p {
 
 body {
   background-color: var(--charcoal-Grey);
+  font-size: 16px;
 }
 
 .form-section {
@@ -58,7 +59,7 @@ body {
 }
 
 .form-text {
-  padding: 0 0 0 2rem;
+  padding: 0 0.5rem 0 2rem;
 }
 
 .features-text {
@@ -124,4 +125,15 @@ body {
 .form-image img {
   width: 100%;
   height: auto;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--tomato);
+  padding: 1rem;
 }
