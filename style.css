@@ -1,0 +1,117 @@
+:root {
+  --tomato: hsl(11, 100%, 63%);
+  --light-pink: hsl(347, 98%, 66%);
+  --dark-Slate-Grey: hsl(234, 29%, 20%);
+  --charcoal-Grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dark-Slate-Grey);
+  padding: 1rem 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--charcoal-Grey);
+  line-height: 1.5Frem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--charcoal-Grey);
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+
+.form-text {
+  padding: 2rem 3rem;
+}
+
+.features-text {
+  margin: 1rem 0 2rem 0;
+}
+
+.features-text > div {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--dark-Slate-Grey);
+  margin-bottom: 0.8rem;
+}
+
+.form-input input {
+  padding: 1rem 1.5rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-input input:focus {
+  outline: none;
+}
+
+.form-input button {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: var(--charcoal-Grey);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.form-input button:hover {
+  background: linear-gradient(45deg, var(--light-pink), var(--tomato));
+  box-shadow: 0px 5px 15px -3px var(--light-pink);
+}
+
+.form-image img {
+  width: 100%;
+  height: auto;
+}
