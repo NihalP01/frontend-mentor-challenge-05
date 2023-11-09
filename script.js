@@ -5,9 +5,10 @@ const form = document.getElementById('form');
 const userEmail = document.getElementById('user-mail');
 
 const btnDismiss = document.getElementById('btn-dismiss');
-const emailPattern =
-  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const btnSubmit = document.getElementById('btn-submit');
+
+const image = document.getElementById('form-image');
 
 btnSubmit.addEventListener('click', () => {
   if (!emailPattern.test(email.value)) {
@@ -29,4 +30,13 @@ btnSubmit.addEventListener('click', () => {
 btnDismiss.addEventListener('click', () => {
   form.style.display = 'flex';
   modal.style.display = 'none';
+});
+
+window.addEventListener('resize', () => {
+  const windowSize = window.innerWidth;
+  if (windowSize < 600) {
+    image.src = './assets/images/illustration-sign-up-mobile.svg';
+  } else {
+    image.src = './assets/images/illustration-sign-up-desktop.svg';
+  }
 });

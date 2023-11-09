@@ -87,6 +87,10 @@ body {
   display: none;
 }
 
+#img-mobile {
+  display: none;
+}
+
 .form-input label {
   font-size: 0.8rem;
   font-weight: 700;
@@ -122,9 +126,13 @@ button {
   box-shadow: 0px 5px 15px -3px var(--light-pink);
 }
 
+.form-image {
+  /* width: 100%; */
+}
+
 .form-image img {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 }
 
 .modal {
@@ -163,6 +171,13 @@ button {
     background-color: var(--white);
     padding: 0;
     border-radius: 0;
+    width: 100%;
+  }
+  #img-desktop {
+    display: none;
+  }
+  #img-mobile {
+    display: flex;
     width: 100%;
   }
   .form-text {
